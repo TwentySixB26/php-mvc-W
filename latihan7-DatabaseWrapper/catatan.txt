@@ -1,0 +1,53 @@
+ATTR_PERSISTENT : 
+adalah salah satu atribut pada PDO (PHP Data Objects) yang digunakan untuk membuat koneksi database 
+yang persisten. Fungsi utama dari ATTR_PERSISTENT adalah untuk meningkatkan performa aplikasi dengan 
+cara mengurangi waktu yang dibutuhkan untuk membuka koneksi baru ke database. Hal ini sangat bermanfaat 
+untuk aplikasi yang memerlukan banyak koneksi database.
+
+
+ATTR_ERRMODE : 
+adalah salah satu atribut pada PDO (PHP Data Objects) yang digunakan untuk mengatur bagaimana 
+kesalahan (error) akan ditangani saat berinteraksi dengan database. Pengaturan ini menentukan apakah 
+kesalahan akan diabaikan, dipicu sebagai peringatan, atau dilempar sebagai exception.
+1. PDO::ERRMODE_SILENT 
+- Mode default.
+- PDO tidak menampilkan kesalahan secara langsung. Sebaliknya, kesalahan hanya disimpan secara internal, dan 
+  Anda harus memeriksa kode kesalahan secara manual setelah setiap operasi.
+- Tidak ada pesan atau pemberitahuan yang diberikan.
+2.PDO::ERRMODE_WARNING
+- PDO akan menampilkan kesalahan sebagai peringatan (warning), tetapi skrip PHP akan terus berjalan.
+- Berguna untuk pengembangan atau debugging, tetapi mungkin tidak ideal untuk produksi.
+3. PDO::ERRMODE_EXCEPTION 
+- PDO akan melemparkan exception (PDOException) saat kesalahan terjadi.
+- Ini adalah mode yang paling dianjurkan, karena memungkinkan Anda menangani kesalahan dengan cara yang
+  lebih terkendali menggunakan try...catch block.
+
+
+try...catch block  : 
+Digunakan untuk menangani exception yang dilemparkan oleh PDO. Ini memungkinkan Anda untuk memberikan 
+respon yang lebih baik terhadap kesalahan, seperti menampilkan pesan khusus atau melakukan logging.
+
+
+
+PDO::PARAM_INT   :
+adalah salah satu konstanta yang digunakan dalam PDO (PHP Data Objects) untuk mengikat nilai 
+parameter ke tipe data integer dalam pernyataan SQL yang menggunakan prepared statements.begitu pun boolean
+dan lainya untuk penulisan code tinggal diganti belakangnya jadi PDO::PARAM_BOOL
+
+
+bindValue() :
+ adalah metode yang berguna dalam PDO untuk mengikat nilai langsung ke placeholder dalam prepared statements. Ini 
+ memastikan bahwa input pengguna diikat dengan aman dan mencegah SQL injection. bindValue sangat berguna ketika 
+ Anda bekerja dengan nilai tetap yang tidak akan berubah sebelum eksekusi query.
+
+
+
+
+
+
+
+
+
+
+
+

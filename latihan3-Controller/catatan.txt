@@ -1,0 +1,30 @@
+file_exists() :  
+pada PHP digunakan untuk memeriksa apakah sebuah file atau direktori tertentu ada di server. 
+Fungsi ini mengembalikan nilai true jika file atau direktori tersebut ada, dan false jika tidak.
+
+
+unset() :
+menghapus salah satu dari array 
+
+
+method_exists($object_or_class,$method_name) : 
+pada PHP digunakan untuk memeriksa apakah suatu metode (fungsi anggota) tertentu ada dalam sebuah 
+objek atau kelas. Fungsi ini sangat berguna saat bekerja dengan objek, terutama saat Anda tidak 
+yakin apakah objek tersebut memiliki metode tertentu.
+1. $object_or_class: 
+Nama objek atau kelas yang ingin diperiksa.
+2. $method_name: 
+Nama metode yang ingin diperiksa apakah ada dalam objek atau kelas tersebut.
+
+
+
+array_values() : 
+pada PHP digunakan untuk mengembalikan semua nilai dari sebuah array, tetapi dengan kunci-kunci yang 
+telah diatur ulang menjadi urutan indeks numerik yang dimulai dari 0.
+
+
+call_user_func_array() : 
+pada PHP digunakan untuk memanggil suatu fungsi atau metode dengan menggunakan array sebagai parameter.
+ Ini memungkinkan Anda untuk memanggil fungsi dengan parameter yang telah dikemas dalam sebuah array, yang 
+ berguna dalam berbagai situasi di mana parameter yang dikirim ke fungsi tidak diketahui jumlahnya atau 
+ harus ditentukan secara dinamis.

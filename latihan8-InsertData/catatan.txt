@@ -1,0 +1,7 @@
+rowCount() :
+digunakan dalam konteks penggunaan PDO (PHP Data Objects) untuk menangani basis data di PHP. Fungsi ini digunakan 
+untuk menghitung jumlah baris yang terpengaruh oleh query SQL, seperti SELECT, INSERT, UPDATE, atau DELETE
+
+
+
+bagaimana jika langsung diakses ke link 

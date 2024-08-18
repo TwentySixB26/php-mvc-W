@@ -1,0 +1,67 @@
+-Multiviews : 
+Jika MultiViews diaktifkan dan pengguna meminta /about, Apache akan mencoba mencari file 
+yang cocok dan bisa memilih salah satu dari file tersebut berdasarkan konfigurasi server dan preferensi klien. 
+
+
+RewriteEngine On : 
+digunakan untuk memulai sesuatu yang ingin ditulis ulang/start 
+
+
+RewriteCond: 
+Kondisi yang harus dipenuhi agar aturan yang terkait dapat dieksekusi.
+
+
+REQUEST_FILENAME :
+untuk memeriksa keberadaan file atau direktori sebelum menjalankan aturan pengaturan ulang (rewrite rules). 
+Ini sangat berguna ketika Anda ingin memastikan bahwa permintaan diarahkan hanya jika file atau direktori 
+yang diminta tidak ada atau jika Anda ingin mengarahkan ulang berdasarkan keberadaan file tertentu.
+
+
+RewriteCond %{REQUEST_FILENAME} !-d :
+Memeriksa apakah direktori yang diminta tidak ada / harus ada direktori, jadi url harus berbentuk direktori 
+
+
+RewriteCond %{REQUEST_FILENAME} !-f :
+Memeriksa apakah file yang diminta tidak ada / harus ada file ,  jadi url harus berbentuk file 
+
+
+^ : 
+Menandakan awal dari string URL.
+
+
+$ : 
+Menandakan akhir dari string URL.
+
+^(.*)$   :
+ambil semua karakter dari awal sampai karakter akhir 
+
+
+[L]: 
+Menandakan bahwa ini adalah aturan terakhir jika aturan ini cocok, sehingga aturan lain 
+tidak akan dievaluasi.
+
+
+QSA:
+Menambahkan query string dari URL asli ke URL baru.
+
+
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L] :
+apapun yang ada di ^(.*)$ 
+akan di pindihkan ke $l 
+
+
+
+rtrim('bagian' , 'apa yg ingin dihapus') :
+pada PHP digunakan untuk menghapus karakter spasi atau karakter lain yang ditentukan dari akhir
+(kanan) sebuah string. 
+
+
+filter_var() :
+pada PHP digunakan untuk memfilter data sesuai dengan filter tertentu. Ini adalah cara yang sangat berguna 
+dan aman untuk memvalidasi dan membersihkan data yang masuk, 
+terutama data yang berasal dari input pengguna. 
+
+
+FILTER_SANITIZE_URL: 
+Membersihkan URL dari karakter yang tidak diizinkan.
+

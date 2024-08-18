@@ -1,0 +1,7 @@
+json_encode() : 
+di PHP digunakan untuk mengubah data menjadi format JSON (JavaScript Object Notation).
+
+
+val() :
+biasanya merujuk pada metode dalam jQuery, sebuah pustaka JavaScript. Metode val() digunakan untuk mendapatkan atau 
+mengatur nilai dari elemen input seperti <input>, <textarea>, atau <select> dalam sebuah form.
